@@ -1,7 +1,6 @@
 import './App.css';
 import AddContact from './Components/AddContact';
 import Contacts from './Components/Contacts';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 class App extends React.Component {
@@ -15,20 +14,17 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            Contacts
-          </p>
+          <h2>Contacts App</h2>
         </header>
-        <div>
+        <div className="add-contact">
           <AddContact
             onCreateContact={contact => {
               this.contacts.push(contact);
             }}
           />
         </div>
-        <div>
+        <div className="contact-list">
           <Contacts contacts={this.state.contacts}/>
-          
         </div>
       </div>
     );

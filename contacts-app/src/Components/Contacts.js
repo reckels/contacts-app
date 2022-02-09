@@ -1,6 +1,6 @@
 import React from 'react';
-import Contact from './Contacts';
 import PropTypes from 'prop-types';
+import './Contacts.css'
 
 class Contacts extends React.Component {
     static propTypes = {
@@ -10,7 +10,7 @@ class Contacts extends React.Component {
         const {contacts} = this.props;
         return(
             <div className="Contacts">
-                <header>Contact List</header>
+                <h3>Contact List</h3>
                 <ul className="contact-list">
                     {contacts.map((contact) => 
                         <li key={contact.name} className="contact-list-item">

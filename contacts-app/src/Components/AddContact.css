@@ -1,0 +1,33 @@
+.form {
+  width: 60%;
+  margin: auto;
+}
+
+.input {
+  text-align: center;
+}
+
+.name-input {
+  float: left;
+}
+
+.phone-input {
+  float: left;
+}
+
+.city-input {
+  float: left;
+}
+
+.zip-input {
+  float: left;
+}
+
+button {
+  margin: 18px;
+  margin-left: 90px;
+}
+
+label {
+  padding: 20px;
+}
